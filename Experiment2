@@ -1,0 +1,99 @@
+public class Student {
+
+    String uid;
+    String name;
+    int fineAmount;
+    int currentBorrowCount;
+
+    public Student(String uid, String name, int fineAmount, int currentBorrowCount) {
+        this.uid = uid;
+        this.name = name;
+        this.fineAmount = fineAmount;
+        this.currentBorrowCount = currentBorrowCount;
+    }
+
+}
+
+public class Asset {
+
+    String assetId;
+    String assetName;
+    boolean available;
+    int securityLevel;
+
+    public Asset(String assetId, String assetName, boolean available, int securityLevel) {
+        this.assetId = assetId;
+        this.assetName = assetName;
+        this.available = available;
+        this.securityLevel = securityLevel;
+    }
+
+}
+
+public class CheckoutRequest {
+
+    String uid;
+    String assetId;
+    int hoursRequested;
+
+    public CheckoutRequest(String uid, String assetId, int hoursRequested) {
+        this.uid = uid;
+        this.assetId = assetId;
+        this.hoursRequested = hoursRequested;
+    }
+
+}
+
+public class ValidationUtil {
+
+    public static void validateUid(String uid) {
+       
+    }
+
+    public static void validateAssetId(String assetId) {
+        
+    }
+
+    public static void validateHours(int hrs) {
+    
+    }
+
+}
+
+
+import java.util.HashMap;
+
+public class AssetStore {
+
+    HashMap<String, Asset> assetMap = new HashMap<>();
+
+    public Asset findAsset(String assetId) {
+        return null;
+    }
+
+    public void markBorrowed(Asset asset) {
+        
+    }
+
+}
+
+public class CheckoutService {
+
+    public String checkout(CheckoutRequest req) {
+
+       
+
+        return null;
+    }
+
+}
+
+
+public class Main {
+
+    public static void main(String[] args) {
+
+       
+    }
+
+}
